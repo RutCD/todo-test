@@ -19,6 +19,9 @@ defmodule TodoTestWeb.Router do
 
     live  "/", TodoLive, :index
 
+    # simple pages:
+    get "/contact", PageController, :contact
+
     
 
 
