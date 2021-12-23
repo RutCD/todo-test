@@ -18,10 +18,12 @@ defmodule TodoTestWeb.Router do
     pipe_through :browser
 
     live  "/", TodoLive, :index
-    
-    
-    
 
+
+    # simple pages:
+    get "/contact", PageController, :contact
+
+    get "/home", PageController, :home
 
   end
 
