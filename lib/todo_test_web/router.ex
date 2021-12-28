@@ -22,8 +22,7 @@ defmodule TodoTestWeb.Router do
     # simple pages:
     get "/contact", PageController, :contact
 
-    
-
+    get "/home", PageController, :home
 
   end
 
