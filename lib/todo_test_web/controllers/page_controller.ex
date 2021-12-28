@@ -14,5 +14,4 @@ defmodule TodoTestWeb.PageController do
   def home(conn, _params) do
     render(conn, "home.html")
   end
-
 end
