@@ -7,11 +7,14 @@ defmodule TodoTestWeb.PageController do
 
   # declarar funcion
   def contact(conn, _params) do
-   name = "Rut"
-    render(conn, "contact.html", name: name)
+    render(conn, "contact.html")
   end
 
   def home(conn, _params) do
     render(conn, "home.html")
+  end
+
+  def about(conn, _params) do
+    render(conn,"about.html") 
   end
 end
