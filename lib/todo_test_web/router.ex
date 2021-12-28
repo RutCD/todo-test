@@ -26,6 +26,8 @@ defmodule TodoTestWeb.Router do
 
     get "/about", PageController, :about
 
+    get "/price", PageController, :price
+
   end
 
   # Other scopes may use custom stacks.
