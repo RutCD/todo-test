@@ -3,13 +3,13 @@ defmodule TodoTest.Repo.Migrations.Price do
 
   def change do
 
-  	create table ("Price") do 
-  		add :name, :varchar
-      	add :descripcion, :varchar
-      	add :price, :integer
+  	create table ("Prices") do 
+  		add :name, :string
+      	add :descripcion, :string
+      	add :price, :float
 
       	timestamps()
-      	
+
       end
   	end
 end
