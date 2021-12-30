@@ -18,8 +18,5 @@ defmodule TodoTestWeb.PageController do
     render(conn,"about.html") 
   end
 
-  def price(conn, _params) do
-    render(conn,"price.html")
-    
-  end
+  
 end
