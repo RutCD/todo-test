@@ -25,11 +25,8 @@ defmodule TodoTestWeb.Router do
     get "/home", PageController, :home
 
     get "/about", PageController, :about
-   
-    resources "/prices", PriceController
-     
-    
 
+    get "/price", PageController, :price
 
   end
 

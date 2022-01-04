@@ -1,4 +1,4 @@
-defmodule TodoTest.Accounting.Price do
+defmodule TodoTest.Price do
   use Ecto.Schema
   import Ecto.Changeset
 
