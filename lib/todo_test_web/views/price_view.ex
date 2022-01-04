@@ -1,3 +1,3 @@
 defmodule TodoTestWeb.PriceView do
-	use TodoTestWeb, :view
+  use TodoTestWeb, :view
 end
