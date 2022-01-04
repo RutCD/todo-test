@@ -4,7 +4,7 @@ defmodule TodoTest.Repo.Migrations.CreatePrices do
   def change do
     create table(:prices) do
       add :name, :string
-      add :descriptio, :string
+      add :description, :string
       add :price, :float
 
       timestamps()
