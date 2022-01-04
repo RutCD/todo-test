@@ -2,7 +2,10 @@ defmodule TodoTestWeb.PriceController do
 use TodoTestWeb, :controller
 
 	def index(conn, _params) do
-	render(conn, "index.html")
+
+		prices = name: "Book" description: "the best moments of the history" price: "250"
+
+	render(conn, "index.html", prices: prices)
 
 	end
 

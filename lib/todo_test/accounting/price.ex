@@ -1,9 +1,9 @@
-defmodule TodoTest.Price do
+defmodule TodoTest.Accounting.Price do
   use Ecto.Schema
   import Ecto.Changeset
 
   schema "prices" do
-    field :description, :string
+    field :descriptio, :string
     field :name, :string
     field :price, :float
 
@@ -13,7 +13,7 @@ defmodule TodoTest.Price do
   @doc false
   def changeset(price, attrs) do
     price
-    |> cast(attrs, [:name, :description, :price])
-    |> validate_required([:name, :description, :price])
+    |> cast(attrs, [:name, :descriptio, :price])
+    |> validate_required([:name, :descriptio, :price])
   end
 end
