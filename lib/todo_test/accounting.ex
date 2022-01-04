@@ -14,7 +14,11 @@ defmodule TodoTest.Accounting do
   ## Examples
 
       iex> list_prices()
-      [%Price{}, ...]
+      [
+        %Price{
+          
+        }, ...
+      ]
 
   """
   def list_prices do
