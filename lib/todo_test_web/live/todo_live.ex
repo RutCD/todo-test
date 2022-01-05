@@ -9,6 +9,7 @@ defmodule TodoTestWeb.TodoLive do
   {:ok, fetch(socket)}
 end
 
+
 def handle_info({Todos, [:todo | _], _}, socket) do
   {:noreply, fetch(socket)}
 end
@@ -32,4 +33,4 @@ defp fetch(socket) do
 
 end
 
-end 
+end

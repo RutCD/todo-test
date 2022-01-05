@@ -19,4 +19,21 @@ defmodule TodoTest.AccountingFixtures do
 
     price
   end
+
+  @doc """
+  Generate a price.
+  """
+  def prices_fixture(attrs \\ %{}) do
+    {:ok, price} =
+      attrs
+      |> Enum.into(%{
+      name: "some name",
+      description: "some description",
+      price: "some price"
+
+      })
+      |> TodoTest.Accounting.create_price()
+
+    price
+  end
 end
