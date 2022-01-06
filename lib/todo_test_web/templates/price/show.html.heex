@@ -1,0 +1,23 @@
+<h1>Show Price</h1>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @price.name %>
+  </li>
+
+  <li>
+    <strong>description:</strong>
+    <%= @price.description %>
+  </li>
+
+  <li>
+    <strong>Price:</strong>
+    <%= @price.price %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.price_path(@conn, :edit, @price) %></span> |
+<span><%= link "Back", to: Routes.price_path(@conn, :index) %></span>
