@@ -1,10 +1,10 @@
-defmodule TodoTest.Price do
+defmodule TodoTest.Accounting.Price do
   use Ecto.Schema
   import Ecto.Changeset
 
   schema "prices" do
-    field :description, :string
     field :name, :string
+    field :description, :string
     field :price, :float
 
     timestamps()
