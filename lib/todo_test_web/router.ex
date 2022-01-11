@@ -28,6 +28,8 @@ defmodule TodoTestWeb.Router do
 
     resources "/price", PriceController
 
+    resources "/category", CategoryController
+
 
 
 
