@@ -28,6 +28,7 @@ defmodule TodoTestWeb.Router do
 
     resources "/price", PriceController
 
+
     get "/pricelist", PriceController, :pricelist
 
     resources "/category", CategoryController
