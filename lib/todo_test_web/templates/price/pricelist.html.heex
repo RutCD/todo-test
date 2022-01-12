@@ -1,0 +1,25 @@
+<table>
+<thead>
+
+<tr>
+  <th>price</th>
+	<th>Name</th>
+	<th>Description</th>
+	
+</tr>
+
+</thead>
+ <tbody>
+<%= for price <- @prices do%>
+ 
+    <tr>
+      <td><h1 style="font-size:1000%;"><%= price.price %></h1></td>
+      <td><%= price.name %></td>
+      <td><%= price.description %></td>
+      
+
+      
+    </tr>
+<% end %>
+  </tbody>
+</table>

@@ -57,4 +57,11 @@ defmodule TodoTestWeb.PriceController do
   |> put_flash(:info, "Price deleted successfully")
   |> redirect(to: Routes.price_path(conn, :index))
  end
+
+ def pricelist(conn, _params) do
+  prices = Accounting.list_prices()
+  render(conn, "pricelist.html", prices: prices)
+end
+
+
 end
