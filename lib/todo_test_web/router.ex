@@ -36,6 +36,7 @@ defmodule TodoTestWeb.Router do
 
 
 
+    resources "/users", UserController
   end
 
   # Other scopes may use custom stacks.
